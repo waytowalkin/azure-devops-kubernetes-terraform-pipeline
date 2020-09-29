@@ -29,8 +29,8 @@ stages:
      - bash: echo Build QADeployJob
 - stage: ProdDeploy
   dependsOn: 
-   - DevDeployJob
-   - QADeployJob
+   - DevDeploy
+   - QADeploy
   jobs: 
   - job: ProdDeployJob
     steps:
